@@ -4,46 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <title>Sign up form</title>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <img src="images/car.jpg" width="500px" height="800px">
+        <div class="image">
+            <img src="images/car.jpg"
+            alt="A picture of a car in a dark setting">
+            <div class="logo">
+                <h3>Smiles Per Gallon &nbsp <img src="images/racing-car.png" height="50px" width="50px"></h3>
+                <p>Picture found on <a href="https://unsplash.com/photos/HNCSCpWrVJA" target="blank">Unsplash.com</a></p>
+            </div>
+        </div>
         <div class="sign-up-container">
-            <h1>This is not a real service! 
-            </h1>
+            <h1>Join over 700,000 people in helping build the largest online car community platform!</h1>
+            <h3>What are you waiting for? Sign up today!</h3>
             <form class="sign-up-form">
-                <div class="first-name">
-                    <label for="first name">First Name</label>
-                    <input id="first name" name="first name" type="text" required>
+                <span></span>
+                <div class="top">
+                    <div class="first-name">
+                        <label for="first name">First Name</label>
+                        <input id="first name" name="first name" type="text" placeholder= " "" required>
+                    </div>
+                    <div class="last-name">
+                        <label for="last name">Last Name</label>
+                        <input id="last name" name="last name" type="text" placeholder= " " required>
+                    </div>
                 </div>
-                <div class="last-name">
-                    <label for="last name">Last Name</label>
-                    <input id="last name" name="last name" type="text" required>
+                <div class="middle">
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder=" " required>
+                    </div>
+                    <div class="phone-number">
+                        <label for="phone number">Phone Number</label>
+                        <input id="phone number" name="phone number" type="tel" placeholder=" " required
+                        pattern='[0-9]{10}'>
+                    </div>
                 </div>
-                <div class="email">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" required>
+                <div class="bottom">
+                    <div class="password">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" placeholder=" " required>
+                    </div>
+                    <div class="password2">
+                        <label for="password2">Confirm password</label>
+                        <input id="password2" name="password2" type="password" placeholder=" " required>
+                    </div>
                 </div>
-                <div class="phone-number">
-                    <label for="phone number">Phone Number</label>
-                    <input id="phone number" name="phone number" type="tel" required
-                    pattern='[0-9]{10}'>
-                </div>
-                <div class="password">
-                    <label for="password">Password</label>
-                    <input id="password" name="password" type="password" required>
-                </div>
-                <div class="password2">
-                    <label for="password2">Confirm password</label>
-                    <input id="password2" name="password2" type="password" required>
+                <div class="button">
+                    <button type="submit">Create Account</button>
+                    <p>Alrealdy have an account? <a href=" ">Login in</a></p>
                 </div>
             </form>
-            <div class="button">
-                <button>submit</button>
-                <p>Alrealdy have an account? <a href=" ">Login in</a></p>
-            </div>
         </div>
     </div>
 </body>
