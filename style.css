@@ -3,6 +3,7 @@ html {
     margin: 0;
     overflow: hidden;
     font-family: 'Josefin Sans', sans-serif;
+    flex-wrap: wrap;
 }
 
 body {
@@ -24,9 +25,9 @@ body {
     position: relative;
 }
 
-.image > img{
-    min-height: 100vh;
-    max-width: 500px;
+.image > img {
+    max-width: auto;
+    height: 100vh;
 }
 
 .logo > h3{
@@ -78,6 +79,8 @@ a:hover {
     padding: 20px;
     padding-left: 50px;
     max-width: 55rem;
+    text-align: center;
+    margin-right: 40px;
 }
 
 .sign-up-form {
@@ -174,6 +177,6 @@ input:invalid {
   input:valid {
       background-color: none;
   }
-  
+
 
 
